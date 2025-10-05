@@ -3,8 +3,8 @@ All models run locally
 
 ## Set up virtual environment
 **Run in terminal**: 
-sudo apt install python3.10-venv
-python -m venv venv
+sudo apt install python3.10-venv (or sudo apt install python3.12-venv)
+python -m venv venv (or python3 -m venv venv)
 source venv/bin/activate
 
 ## Install packages specified in requirements.txt
@@ -19,6 +19,9 @@ Pull specific ollama model: ollama pull llama3.2
 Pull embedding model: ollama pull mxbai-embed-large
 
 See what ollama models available in the system: ollama list
+
+## Finally run:
+python main.py
 
 
 
