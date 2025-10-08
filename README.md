@@ -2,16 +2,21 @@
 All models run locally
 
 ## Set up virtual environment
+Ctrl + Shift + P -> Python: Create Environment -> Venv -> Select python version (3.10 or 3.12)
+
 **Run in terminal**: 
-sudo apt install python3.10-venv (or sudo apt install python3.12-venv)
-python -m venv venv (or python3 -m venv venv)
-source venv/bin/activate
+sudo apt install python3.10-venv (or sudo apt install python3.12-venv) (no need if setting up venv from VSCode)
+python -m venv venv (or python3 -m venv venv) (no need if setting up venv from VSCode)
+source .venv/bin/activate
 
 ## Install packages specified in requirements.txt
 pip install -r .\requirements.txt
 
 ## Download Ollama
-Go to https://ollama.com/download and follow instructions
+Go to https://ollama.com/download and follow instructions i.e. type in terminal:
+
+sudo apt-get install curl (if curl not installed)
+curl -fsSL https://ollama.com/install.sh | sh
 
 Go to terminal and type: ollama to make sure command works
 
@@ -23,5 +28,7 @@ See what ollama models available in the system: ollama list
 ## Finally run:
 python main.py
 
+## Deactivate virtual environment
+deactivate
 
 

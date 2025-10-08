@@ -1,0 +1,13 @@
+# Environment
+.env.local
+.env.*.local
+.venv
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Ignore all files in .venv folder
+.venv/*
